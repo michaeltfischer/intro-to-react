@@ -48,6 +48,24 @@
           image={info.image}/>,document.getElementById('app')
       );
 
+      function RollCall(props){
+          return <p id="Roll Call">Thank you, {prop.name} for mentoring me!</p>
+      }
+
+      function Call(){
+          return (
+              <div>
+                <RollCall name ="Carrie" />
+                <RollCall name="Jacob" />
+                <RollCall name="Alex" />
+              </div>
+          );
+      }
+
+        ReactDOM.render(
+            <Call />, document.getElementById('Roll Call')
+        );
+
     </script>
   </body>
 </html>
